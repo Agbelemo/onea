@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+        /* logo part */
+.logo{
+    text-align: center;
+    margin-top: 3em;
+}
+        /* nav part */
+header nav{
+    display: grid;
+    grid-template-columns: 35% 50% 15%;
+    margin-left: 50px;
+    margin-top: 5em;
+}
+
+.sideNav{
+    display: grid;
+    grid-template-columns: repeat(2,25%);
+    position: relative;
+    cursor: pointer;
+}
+
+.sideNav p:nth-child(1)::before {
+    position: absolute;
+    width: 1.5vw;
+    height: 2vw;
+    content: '';
+    background: url('./assest/heart.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+    margin-top: -5px;
+}
+
+.sideNav p:nth-child(2)::before {
+    position: absolute;
+    width: 1.5vw;
+    height: 2vw;
+    content: '';
+    background: url('./assest/shopping-bag.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+    margin-top: -5px;
+}
+
+.sideNav p:hover::after{
+    position: absolute;
+    width: 4.5vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -60px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(7,12%);
+    list-style-type: none;
+    margin-left: -80px;
+    cursor: pointer;
+}
+
+nav ul li{
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(1)::after{
+    position: absolute;
+    width: 4vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -50px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(6):hover::after{
+    position: absolute;
+    width: 4.9vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -65px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(7):hover::after{
+    position: absolute;
+    width: 4.9vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -65px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+nav ul li:hover::after{
+    position: absolute;
+    width: 3.5vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -45px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.menu span{
+    background-color: black;
+    width: 3vw;
+    height: 2vw;
+}
+
+.search p::before {
+    position: absolute;
+    width: 1.5vw;
+    height: 2vw;
+    content: '';
+    background: url('./assest/search.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -30px;
+    margin-top: -1px;
+    cursor: pointer;
+   
+}
+
+.search p:hover::after{
+    position: absolute;
+    width: 4.5vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -55px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.showcaseContainer{
+
+}
+
+.showcaseText{
+    width: 30%;
+    position: absolute;
+    margin-top: 12pc;
+    margin-left: 50pc;
+}
+
+.showcaseImg{
+    width: 98vw;
+    height: 35vw;
+    background: url('./assest/organic-h-slider-3.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+.showcaseText button{
+    background: black;
+    color: white;
+    border: 0;
+    padding: 14px 46px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.showcaseText button::before{
+    position: absolute;
+    width: 11.6vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -45px;
+    margin-top: 37px;
+    cursor: pointer;
+}
+
+.qualityContainer{
+   display: grid;
+   grid-template-columns:  30% 30% 30%;
+   margin-left: 5em;
+}
+
+.qualityText{
+    position: absolute;
+    width: 14.3%;
+    margin-left: 2.3pc;
+    margin-top: 11.5pc;
+}
+
+
+.qualityContainer .qualityItem:nth-child(1) .qualityImg{
+    padding: 95% 0px 59px 55px;
+    background: url('./assest/h-13-img-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 7px;
+}
+
+.qualityContainer .qualityItem:nth-child(2) .qualityImg{
+    padding: 100% 0px 59px 100px;
+    background: url('./assest/h-13-img-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 7px;
+}
+
+.qualityItem .qualityImg:nth-child(2){
+    padding: 100% 0px 59px 55px;
+    background: url('./assest/h-13-img-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 7px;
+}
+
+.qualityItem p{
+    position: relative;
+    margin-top: 10px;
+}
+
+.qualityItem p::after{
+    position: absolute;
+    width: 13.2vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -10.5em;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.flowerText {
+   margin-left: 20em;
+}
+
+.flowerText ul{
+    display: grid;
+    grid-template-columns: repeat(5,12%);
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.flowerText ul li:nth-child(1)::before {
+    position: absolute;
+    width: 2vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -5px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.flowerText ul li:nth-child(2):hover::before {
+    position: absolute;
+    width: 5.5vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -5px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.flowerText ul li:nth-child(3):hover::before{
+    position: absolute;
+    width: 7vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -5px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.flowerText ul li:nth-child(4):hover::before{
+    position: absolute;
+    width: 7.4vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -5px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.flowerText ul li:nth-child(5):hover::before{
+    position: absolute;
+    width: 6.2vw;
+    height:  0.1vw;
+    content: '';
+    background: black;
+    margin-left: -2px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.shopContainer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 5px;
+    margin-top: -80px;
+}
+
+.shopContainer .shops:nth-child(1) .shopImg{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/o-h-product-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopContainer .shops:nth-child(2) .shopImg{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/h-13-prod-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopContainer .shops:nth-child(3) .shopImg{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/h-13-prod-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopContainer .shops:nth-child(4) .shopImg{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/h-13-prod-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopItem{
+    display: grid;
+    grid-template-columns: repeat(2,52%);
+    margin-top: -50px;
+    margin-left: 40px;
+}
+
+.name h5{
+    font-size: 15px;
+}
+
+.name p{
+    font-size: 13px;
+}
+
+.price{
+    margin-left: 70px;
+}
+
+.shopContainerTwo{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+
+.shopContainerTwo .shopsTwo:nth-child(1) .shopImgTwo{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/h-13-prod-5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopContainerTwo .shopsTwo:nth-child(2) .shopImgTwo{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/h-13-prod-6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopContainerTwo .shopsTwo:nth-child(3) .shopImgTwo{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/h-13-prod-7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopContainerTwo .shopsTwo:nth-child(4) .shopImgTwo{
+    padding: 20em 0px 55px 16em;
+    margin: 40px;
+    background: url('./assest/h-13-prod-8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shopItemTwo{
+    display: grid;
+    grid-template-columns: repeat(2,53.5%);
+    margin-top: -50px;
+    margin-left: 40px;
+}
+
+.nameTwo h5{
+    font-size: 15px;
+}
+
+.nameTwo p{
+    font-size: 13px;
+}
+
+.priceTwo{
+    margin-left: 60px;
+}
